@@ -8,8 +8,8 @@ class ProductsController < ApplicationController
   end
 
   def add
-  #  binding.pry
-  #  @cart = cart
+    binding.pry
+    @cart = cart
     @cart << params[:product]
     session[:cart] = @cart
     redirect_to '/'
