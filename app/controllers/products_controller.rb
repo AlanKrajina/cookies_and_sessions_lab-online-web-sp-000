@@ -8,7 +8,6 @@ class ProductsController < ApplicationController
   end
 
   def add
-    binding.pry
     @cart = []
     @cart << params[:product]
     session[:cart] = @cart
